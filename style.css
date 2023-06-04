@@ -1,0 +1,190 @@
+/* reset code and common code start here */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    outline: 0;
+    font-weight: 400;
+}
+
+/* font-family: 'Italianno', cursive;
+font-family: 'Roboto', sans-serif; */
+
+
+html{
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width:120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;    
+}
+.text-justify{
+    text-align: justify;
+}
+
+/* reset code and common code end here */
+
+/* header start here  */
+header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: black;
+     color: #fff;
+     padding: 2rem 1rem ;
+     position: sticky;
+     top: 0;
+     z-index: 10;
+     min-height: 5vh;
+
+}
+.logo-figure{
+    color: rgb(148, 43, 52);
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+nav li:last-child{
+    margin-right: 0;
+}
+
+nav li:hover{
+    background-color: rgb(67, 22, 108) ;
+    border-radius: 5px;
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+.nav-link{
+    font-size: 1.8rem;
+    color:#fff ;
+    cursor: pointer;
+
+}
+/* header end here  */
+
+
+/* banner section start here  */
+#blog-banner-section{
+    padding:5rem 1rem ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    min-height: 95vh ;
+}
+
+#blog-banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: #fff;
+}
+
+.banner-desc{
+    font-size: 1.8rem;
+}
+
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.banner-img{
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid;
+}
+
+
+
+
+
+
+
+/* banner section end here  */
+
+
+
+
+
+
+/* responsive start here  */
+
+@media (max-width: 992px) {
+    #blog-banner-section{
+        flex-direction: column;
+    }
+    #blog-banner-section article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 55.5%;
+    }
+    #blog-banner-section article{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    html{
+        font-size: 48.5%;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    nav ul{
+        padding-left: 2.5rem;
+    }
+    nav li {
+        display: block;
+        margin: 1rem 0;
+        margin-right: 0;
+    }
+    #blog-banner-section{
+        min-height: auto ;
+    }
+
+    #blog-banner-section article{
+        width:90%;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}
+
+/* responsive end here  */
